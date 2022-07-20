@@ -13,7 +13,6 @@ import javax.persistence.*;
 @Builder
 @Getter
 @Entity
-@Table(name = "USERS")
 public class User extends BaseTimeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) //auto increase
