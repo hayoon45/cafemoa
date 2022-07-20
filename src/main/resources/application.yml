@@ -16,9 +16,9 @@ spring:
       client:
         registration:
           kakao:
-            client-id: a31288d41e5fc2bfcf3d40ec4cf3b196
-            client-secret: GZMFXVPzW1t5LESAkJUmoazVe3bNhBB4
-            redirect-uri: http://localhost:3000/Macgyver/login
+            client-id: 
+            client-secret: 
+            redirect-uri: 
             authorization-grant-type: authorization_code
             client-authentication-method: POST
             client-name: Kakao
