@@ -41,5 +41,4 @@ public class UserApiController {
         return userService.getUser(request);
     }
 
-    //test
 }
