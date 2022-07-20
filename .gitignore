@@ -3,6 +3,7 @@
 .idea
 
 application-oauth.properties
+
 application-real-db.properties
 
 *.iml
