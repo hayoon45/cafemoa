@@ -2,7 +2,8 @@
 .gradle
 .idea
 
-application.yml
+application-oauth.properties
+application-real-db.properties
 
 *.iml
 build
