@@ -40,4 +40,6 @@ public class UserApiController {
     public User getCurrentUser(HttpServletRequest request){
         return userService.getUser(request);
     }
+
+    //test
 }
