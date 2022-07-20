@@ -1,5 +1,9 @@
 # IntelliJ project files
 .gradle
 .idea
+
+application.yml
+
 *.iml
+build
 out

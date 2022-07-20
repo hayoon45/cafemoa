@@ -13,8 +13,41 @@ repositories {
 }
 
 dependencies {
+	//web
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	//lombok
+	implementation('org.projectlombok:lombok')
+	annotationProcessor('org.projectlombok:lombok')
+	testImplementation('org.projectlombok:lombok')
+	testAnnotationProcessor('org.projectlombok:lombok')
+
+	//jpa
+	implementation('org.springframework.boot:spring-boot-starter-data-jpa')
+
+	//DB
+	implementation('com.h2database:h2')
+	implementation 'mysql:mysql-connector-java'
+
+	//security
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	testImplementation("org.springframework.security:spring-security-test") // 권한 관련
+
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
+	//token
+	implementation "com.fasterxml.jackson.core:jackson-core:2.13.3"
+	implementation "com.fasterxml.jackson.core:jackson-annotations:2.13.3"
+	implementation "com.fasterxml.jackson.core:jackson-databind:2.13.3"
+	implementation 'com.auth0:java-jwt:3.19.2'
+
+
+}
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
 }
 
 tasks.named('test') {
